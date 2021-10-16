@@ -7,11 +7,14 @@ import androidx.viewpager.widget.ViewPager;
 import android.os.Bundle;
 import android.util.Log;
 
+import com.google.android.material.tabs.TabLayout;
+
 public class MainActivity extends AppCompatActivity {
     public static final String mess="Android";
+    private TabLayout tabLayout;
     private int[] tabIcons = {
-            R.drawable.ic_tab_newfeed,
-            R.drawable.ic_tab_pro,
+            R.drawable.ic_tab_newfeedhome,
+            R.drawable.ic_tab_profile,
             R.drawable.ic_tab_watch,
             R.drawable.ic_tab_notification,
             R.drawable.ic_tab_menu
@@ -24,7 +27,21 @@ public class MainActivity extends AppCompatActivity {
         ViewPager pager = (ViewPager) findViewById(R.id.pager);
         pager.setOffscreenPageLimit(5);
         pager.setAdapter(adapter);
+
+        tabLayout = (TabLayout) findViewById(R.id.tabs);
+        tabLayout.setupWithViewPager(pager);
+        createTabIcons();
     }
+
+    private void createTabIcons() {
+
+        tabLayout.getTabAt(0).setIcon(tabIcons[0]);
+        tabLayout.getTabAt(1).setIcon(tabIcons[1]);
+        tabLayout.getTabAt(2).setIcon(tabIcons[2]);
+        tabLayout.getTabAt(3).setIcon(tabIcons[3]);
+        tabLayout.getTabAt(4).setIcon(tabIcons[4]);
+    }
+
     /** Called when the activity is about to become visible. */
     @Override
     protected void onStart() {

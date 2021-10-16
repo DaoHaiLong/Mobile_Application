@@ -13,7 +13,7 @@
         android:layout_height="wrap_content">
 
         <com.google.android.material.tabs.TabLayout
-            android:id="@+id/view_pager_tab"
+            android:id="@+id/tabs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
