@@ -7,7 +7,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 public class HomePageAdapterFacebook extends FragmentPagerAdapter{
     private final int PAGE_COUNT = 5;
 
-    private String titles[] = new String[] {"New", "Pro", "Watch","Notification","Menu"};
+//    private String titles[] = new String[] {"New", "Pro", "Watch","Notification","Menu"};
     public HomePageAdapterFacebook(FragmentManager Fm){
         super(Fm);
     }
@@ -34,9 +34,9 @@ public class HomePageAdapterFacebook extends FragmentPagerAdapter{
         return null;
     }
 
-    @Override
-    public CharSequence getPageTitle(int page){
-        return titles[page];
-    }
+//    @Override
+//    public CharSequence getPageTitle(int page){
+//        return titles[page];
+//    }
 
 }
