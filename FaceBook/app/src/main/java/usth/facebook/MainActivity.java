@@ -4,17 +4,21 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
 import android.widget.MediaController;
+import android.widget.Toast;
 import android.widget.VideoView;
 import android.net.Uri;
+import android.view.Menu;
 
 import com.google.android.material.tabs.TabLayout;
 
 public class MainActivity extends AppCompatActivity {
-    public static final String mess="Android";
+    public static final String mess = "Android";
     private TabLayout tabLayout;
     private VideoView videoView;
     private MediaController mediaController;
@@ -26,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
             R.drawable.ic_tab_notification,
             R.drawable.ic_tab_menu
     };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,48 +44,6 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(pager);
         createTabIcons();
 
-        /** Facebook view.1 */
-//        VideoView videoView = findViewById(R.id.View_video);
-//        String videopath ="android.resource://" + getPackageName() + "/" + R.raw.video1;
-//        Uri uri = Uri.parse(videopath);
-//        videoView.setVideoURI(uri);
-//
-//        MediaController mediaController = new MediaController(this);
-//        videoView.setMediaController(mediaController);
-//        mediaController.setAnchorView(videoView);
-//
-//        /** Facebook view.2 */
-//        VideoView videoView2 = findViewById(R.id.View_video2);
-//        String videopath2 ="android.resource://" + getPackageName() + "/" + R.raw.video2;
-//        Uri uri2 = Uri.parse(videopath2);
-//        videoView2.setVideoURI(uri2);
-//
-//        MediaController mediaController2 = new MediaController(this);
-//        videoView2.setMediaController(mediaController2);
-//        mediaController.setAnchorView(videoView2);
-
-//        /** Facebook view.3 */
-//        VideoView videoView3 = findViewById(R.id.View_video3);
-//        String videopath3 ="android.resource://" + getPackageName() + "/" + R.raw.video3;
-//        Uri uri3 = Uri.parse(videopath3);
-//        videoView3.setVideoURI(uri3);
-//
-//        MediaController mediaController3 = new MediaController(this);
-//        videoView.setMediaController(mediaController3);
-//        mediaController.setAnchorView(videoView3);
-//
-//        /** Facebook view.4 */
-//        VideoView videoView4 = findViewById(R.id.View_video4);
-//        String videopath4 ="android.resource://" + getPackageName() + "/" + R.raw.video4;
-//        Uri uri4 = Uri.parse(videopath4);
-//        videoView4.setVideoURI(uri4);
-//
-//        MediaController mediaController4 = new MediaController(this);
-//        videoView.setMediaController(mediaController4);
-//        mediaController.setAnchorView(videoView4);
-
-//        Notification
-
     }
 
 
@@ -91,6 +54,26 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.getTabAt(2).setIcon(tabIcons[2]);
         tabLayout.getTabAt(3).setIcon(tabIcons[3]);
         tabLayout.getTabAt(4).setIcon(tabIcons[4]);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.layout,  menu);
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.search:
+                Toast toast = Toast.makeText(this, "Messenger", Toast.LENGTH_SHORT);
+                toast.show();
+                super.onRestart();
+
+            case R.id.messenger:
+                Intent intent = new Intent(this, MessandSear.class);
+                startActivity(intent);
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     /** Called when the activity is about to become visible. */

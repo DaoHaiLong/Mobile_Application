@@ -9,12 +9,14 @@
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/FaceBook/app/src/main/res/drawable/ic_tab_pro.xml" value="0.290625" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/FaceBook/app/src/main/res/drawable/ic_tab_watch.xml" value="0.290625" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/FaceBook/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/FaceBook/app/src/main/res/layout/activity_messand_sear.xml" value="0.21422101449275363" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/FaceBook/app/src/main/res/layout/custom_tab.xml" value="0.1" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/FaceBook/app/src/main/res/layout/fragment_menu.xml" value="0.264" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/FaceBook/app/src/main/res/layout/fragment_new_freed.xml" value="0.2" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/FaceBook/app/src/main/res/layout/fragment_notification.xml" value="0.19972826086956522" />
-        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/FaceBook/app/src/main/res/layout/fragment_profile_face.xml" value="0.4" />
-        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/FaceBook/app/src/main/res/layout/fragment_watch_face.xml" value="0.39316239316239315" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/FaceBook/app/src/main/res/layout/fragment_profile_face.xml" value="0.21545380212591986" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/FaceBook/app/src/main/res/layout/fragment_watch_face.xml" value="0.2022256331542594" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/FaceBook/app/src/main/res/menu/layout.xml" value="0.27447916666666666" />
       </map>
     </option>
   </component>

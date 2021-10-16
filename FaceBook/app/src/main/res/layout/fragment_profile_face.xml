@@ -496,33 +496,38 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="5dp">
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/newlike"
                     android:layout_marginLeft="15dp"
-                    android:background="@color/white"/>
+                    android:background="@color/white"
+                    android:src="@drawable/newlike" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/New1h"
                     android:layout_marginLeft="46dp"
-                    android:layout_marginTop="10dp"/>
+                    android:layout_marginTop="10dp"
+                    android:text="@string/New1h" />
+
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:src="@drawable/new_coment_comment"
                     android:layout_marginLeft="155dp"
+                    android:layout_marginTop="6dp"
                     android:background="@color/white"
-                    android:layout_marginTop="6dp"/>
+                    android:src="@drawable/new_coment_comment" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/New1f"
                     android:layout_marginLeft="190dp"
-                    android:layout_marginTop="11dp"/>
+                    android:layout_marginTop="11dp"
+                    android:text="@string/New1f" />
+
                 <ImageView
                     android:layout_width="28dp"
                     android:layout_height="28dp"
@@ -530,15 +535,15 @@
                     android:layout_marginTop="6dp"
                     android:background="@color/white"
                     android:src="@drawable/new_share" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_marginTop="11dp"
-                    android:text="@string/New1g" />
-
+                    android:text="@string/New1g"
+                    android:layout_marginBottom="35dp"/>
             </RelativeLayout>
         </LinearLayout>
-
     </LinearLayout>
 </ScrollView>
