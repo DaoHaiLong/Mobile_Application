@@ -86,4 +86,40 @@
     <string name="detail">See your about info</string>
     <string name="edit_detail">Edit Public Detail</string>
 
+
+    <!-- TODO: Facebook watch1 -->
+    <string name="face1">Little Mix </string>
+    <string name="face1a">2h, New York, USA</string>
+    <string name="face1b">#10YearsOfLittleMix #LittleMix #SecretLoveSong</string>
+    <string name="face1c">Little Mix - Secret Love Song (Official Video) ft. Jason Derulo </string>
+
+    <string name="face1e">10k Comments - 3k Shares</string>
+
+
+    <!-- TODO: Facebook watch2 -->
+    <string name="face2">VETV7 ESPORTS </string>
+    <string name="face2a">2h</string>
+    <string name="face2b">T1 with 100 thieves #VCS #VETV7 #LMHT"</string>
+    <string name="face2c">Highlights 100 vs T1 [Vòng Bảng][CKTG 2021][14.10.2021] </string>
+
+    <string name="face2e">106 Comments - 30 Shares</string>
+
+
+    <!-- TODO: Facebook watch3 -->
+    <string name="face3">Phê Phim </string>
+    <string name="face3a">15 phút</string>
+    <string name="face3b">Review phim ZACK SNYDER JUSTICE LEAGUE </string>
+    <string name="face3c">#RestoreTheSnyderVerse </string>
+
+    <string name="face3e">200 Comments - 40 Shares</string>
+
+
+    <!-- TODO: Facebook watch4 -->
+    <string name="face4">Hà Nội Phố </string>
+    <string name="face4a">20h</string>
+    <string name="face4b">Hanoi Tourism</string>
+    <string name="face4c">#HaNoiPho </string>
+    <string name="WatchMore"> Watch more....</string>
+    <string name="face4e">1.2k Comments - 100 Shares</string>
+
 </resources>

@@ -9,6 +9,8 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.MediaController;
 import android.widget.Toast;
 import android.widget.VideoView;
@@ -18,10 +20,10 @@ import android.view.Menu;
 import com.google.android.material.tabs.TabLayout;
 
 public class MainActivity extends AppCompatActivity {
+
     public static final String mess = "Android";
     private TabLayout tabLayout;
     private VideoView videoView;
-    private MediaController mediaController;
     private int position = 0;
     private int[] tabIcons = {
             R.drawable.ic_tab_newfeedhome,
@@ -43,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
         tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(pager);
         createTabIcons();
+
 
     }
 
