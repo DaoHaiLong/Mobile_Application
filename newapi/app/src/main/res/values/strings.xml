@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Facebook</string>
-    <string name="google_maps_key" />
+    <string name="google_maps_key" translatable="false" />
 
     <!--TODO: Newfeed Facebook 1-->
     <string name="New1" translatable="false">NXB Kim Dong </string>
@@ -129,9 +129,9 @@
     <string name="mess">Messenger will be available in the future</string>
     <string name="search">Searching...</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
 
-    <string name="like">like</string>
-    <string name="comment">Comment</string>
-    <string name="share">Share</string>
+    <string name="like" translatable="false">like</string>
+    <string name="comment" translatable="false">Comment</string>
+    <string name="share" translatable="false">Share</string>
 </resources>
