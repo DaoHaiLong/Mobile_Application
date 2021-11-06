@@ -1,5 +1,7 @@
 package android.newapi.Api;
 
+import android.annotation.SuppressLint;
+
 import java.security.cert.CertificateException;
 
 import javax.net.ssl.HostnameVerifier;
@@ -28,12 +30,15 @@ public class APIClients {
         try {
             final  TrustManager[] TM = new TrustManager[]{
                     new X509TrustManager() {
+
                         @Override
                         public void checkClientTrusted(java.security.cert.X509Certificate[] chain, String authType) throws CertificateException {
+
                         }
 
                         @Override
                         public void checkServerTrusted(java.security.cert.X509Certificate[] chain, String authType) throws CertificateException {
+
                         }
 
                         @Override

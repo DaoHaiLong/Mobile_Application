@@ -1,6 +1,16 @@
 package android.newapi;
 
+import android.newapi.ButtonComment.ButttomComment_1;
+import android.newapi.ButtonComment.ButttomComment_2;
+import android.newapi.ButtonComment.ButttomComment_3;
+import android.newapi.ButtonComment.ButttomComment_4;
+import android.newapi.ButtonComment.ButttomComment_5;
+import android.newapi.ImageDetail.Imagedetail_1;
+import android.newapi.ImageDetail.Imagedetail_2;
+import android.newapi.ImageDetail.Imagedetail_3;
+import android.newapi.ImageDetail.Imagedetail_4;
 import android.newapi.Implementation.Articles;
+import android.newapi.Implementation.Newfeed;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -79,9 +89,10 @@ public class NewfeedFace extends Fragment implements View.OnClickListener {
         recyclerView.setItemAnimator(itemAnimator);
         recyclerView.setNestedScrollingEnabled(false);
 
-//        call api
-        ObjectJson();
-//        call tablayout
+           ObjectJson();
+//        call tablayout button
+
+
         Button button=(Button) view.findViewById(R.id.button2);
         Button button1=(Button) view.findViewById(R.id.button5);
         Button button2=(Button) view.findViewById(R.id.button8);
@@ -93,16 +104,28 @@ public class NewfeedFace extends Fragment implements View.OnClickListener {
         button2.setOnClickListener(this);
         button3.setOnClickListener(this);
         button4.setOnClickListener(this);
+
+//        call layout image
+        ImageView img=view.findViewById(R.id.imag1);
+        ImageView img1 =view.findViewById(R.id.imag2);
+        ImageView img2 =view.findViewById(R.id.imag3);
+        ImageView img3 =view.findViewById(R.id.imag4);
+
+        img.setOnClickListener(this);
+        img1.setOnClickListener(this);
+        img2.setOnClickListener(this);
+        img3.setOnClickListener(this);
+
         return view;
     }
     public void ObjectJson(){
         APIKey api= APIClients.getAPIClients().create(APIKey.class);
         String country =utlis.getCountry();
-        Call<android.newapi.Implementation.Newfeed> call;
+        Call<Newfeed> call;
         call=api.getNewfeed(country,API_KEY);
-        call.enqueue(new Callback<android.newapi.Implementation.Newfeed>() {
+        call.enqueue(new Callback<Newfeed>() {
             @Override
-            public void onResponse(Call<android.newapi.Implementation.Newfeed> call, Response<android.newapi.Implementation.Newfeed> response) {
+            public void onResponse(Call<Newfeed> call, Response<Newfeed> response) {
                 if (response.body().getArticles()!=null && response.isSuccessful()){
                     if (!articles.isEmpty()){
                         articles.clear();
@@ -111,9 +134,7 @@ public class NewfeedFace extends Fragment implements View.OnClickListener {
                     adapterHome =new AdapterHome(articles,getActivity());
                     recyclerView.setAdapter(adapterHome);
                     adapterHome.notifyDataSetChanged();
-
                     OnclickListenerDetail();
-
                 }else {
                     Toast toast=Toast.makeText(getActivity(),"No result",Toast.LENGTH_LONG);
                     toast.show();
@@ -145,7 +166,7 @@ public class NewfeedFace extends Fragment implements View.OnClickListener {
 
     }
 
-    // Todo: Click button
+    // Todo: Click button and image
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
@@ -153,21 +174,72 @@ public class NewfeedFace extends Fragment implements View.OnClickListener {
                 doClickButton();
                 break;
             case R.id.button5:
-                doClickButton();
+                doClickButton1();
                 break;
             case R.id.button8:
-                doClickButton();
+                doClickButton2();
                 break;
             case R.id.button11:
-                doClickButton();
+                doClickButton3();
                 break;
             case R.id.button14:
-                doClickButton();
+                doClickButton4();
                 break;
+            case R.id.imag1:
+                doClickImage();
+                break;
+            case R.id.imag2:
+                doClickImage1();
+                break;
+
+            case R.id.imag3:
+                doClickImage2();
+                break;
+
+            case R.id.imag4:
+                doClickImage3();
+                break;
+
+
         }
     }
+//    click button
     private void doClickButton() {
-        Intent intent = new Intent(getActivity(),ButttomCommentFragment.class);
+        Intent intent = new Intent(getActivity(), ButttomComment_1.class);
+        startActivity(intent);
+    }
+    private void doClickButton1() {
+        Intent intent = new Intent(getActivity(), ButttomComment_2.class);
+        startActivity(intent);
+    }
+    private void doClickButton2() {
+        Intent intent = new Intent(getActivity(), ButttomComment_3.class);
+        startActivity(intent);
+    }
+    private void doClickButton3() {
+        Intent intent = new Intent(getActivity(), ButttomComment_4.class);
+        startActivity(intent);
+    }
+    private void doClickButton4() {
+        Intent intent = new Intent(getActivity(), ButttomComment_5.class);
+        startActivity(intent);
+    }
+
+//    click image
+    private void doClickImage() {
+        Intent intent = new Intent(getActivity(), Imagedetail_1.class);
+        startActivity(intent);
+    }
+    private void doClickImage1() {
+        Intent intent = new Intent(getActivity(), Imagedetail_2.class);
+        startActivity(intent);
+    }
+    private void doClickImage2() {
+        Intent intent = new Intent(getActivity(), Imagedetail_3.class);
+        startActivity(intent);
+    }
+    private void doClickImage3() {
+        Intent intent = new Intent(getActivity(), Imagedetail_4.class);
         startActivity(intent);
     }
 

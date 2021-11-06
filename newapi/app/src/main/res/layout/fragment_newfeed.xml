@@ -284,7 +284,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="70dp"
-                            android:src="@drawable/newnxb_kimdong_image" />
+                            android:src="@drawable/newnxb_kimdong_image"
+                            android:id="@+id/imag1"/>
                     </RelativeLayout>
 
                     <RelativeLayout
@@ -450,6 +451,7 @@
                             android:text="@string/New2d" />
 
                         <ImageView
+                            android:id="@+id/imag2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="60dp"
@@ -624,10 +626,12 @@
                             android:src="@drawable/neweed3" />
 
                         <ImageView
+                            android:id="@+id/imag3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="5dp"
-                            android:src="@drawable/newimage3" />
+                            android:src="@drawable/newimage3"
+                            />
                     </RelativeLayout>
 
                     <RelativeLayout
@@ -805,7 +809,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="200dp"
-                            android:src="@drawable/newimage4" />
+                            android:src="@drawable/newimage4"
+                            android:id="@+id/imag4"/>
 
                         <TextView
                             android:layout_width="match_parent"

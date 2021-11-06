@@ -1,17 +1,19 @@
-package android.newapi;
+package android.newapi.ImageDetail;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.newapi.R;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-public class ButttomCommentFragment extends AppCompatActivity {
+public class Imagedetail_1 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_butttom_comment_fragment);
+        setContentView(R.layout.activity_imagedetail1);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

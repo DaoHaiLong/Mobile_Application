@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Facebook</string>
     <string name="google_maps_key" translatable="false" />
 
@@ -127,11 +127,17 @@
 
     <!-- TODO: Messenger -->
     <string name="mess">Messenger will be available in the future</string>
-    <string name="search">Searching...</string>
+    <string name="search" tools:ignore="TypographyEllipsis">Searching...</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
 
     <string name="like" translatable="false">like</string>
     <string name="comment" translatable="false">Comment</string>
     <string name="share" translatable="false">Share</string>
+    <!--    Login and Registration-->
+    <string name="Email" translatable="false">Email</string>
+    <string name="Pass" translatable="false">Password</string>
+    <string name="cPass" translatable="false">Confirm Password</string>
+    <string name="Regis" translatable="false">Register</string>
+    <string name="Login" translatable="false">Login</string>
 </resources>

@@ -17,11 +17,44 @@
         android:theme="@style/Theme.Newapi"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".ButttomCommentFragment"
+            android:name=".RegisterActivity"
             android:exported="true" />
         <activity
+            android:name=".LoginFaceBook"
+            android:exported="true" />
+        <activity
+            android:name=".Messe"
+            android:exported="false" />
+        <activity
+            android:name=".ButtonComment.ButttomComment_5"
+            android:exported="false" />
+        <activity
+            android:name=".ButtonComment.ButttomComment_4"
+            android:exported="false" />
+        <activity
+            android:name=".ButtonComment.ButttomComment_3"
+            android:exported="false" />
+        <activity
+            android:name=".ButtonComment.ButttomComment_2"
+            android:exported="false" />
+        <activity
+            android:name=".ImageDetail.Imagedetail_4"
+            android:exported="false" />
+        <activity
+            android:name=".ImageDetail.Imagedetail_3"
+            android:exported="false" />
+        <activity
+            android:name=".ImageDetail.Imagedetail_2"
+            android:exported="false" />
+        <activity
+            android:name=".ImageDetail.Imagedetail_1"
+            android:exported="false" />
+        <activity
+            android:name=".ButtonComment.ButttomComment_1"
+            android:exported="false" />
+        <activity
             android:name=".DetailActivity"
-            android:exported="true"
+            android:exported="false"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MainActivity"

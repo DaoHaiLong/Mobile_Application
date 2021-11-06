@@ -1,3 +1,5 @@
+# Note: Mn Phải chạy file RegisterActivity trc
+
 # Mobile_Application
 Team members:
 1. Đoàn Văn Chương         
