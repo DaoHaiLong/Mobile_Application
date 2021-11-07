@@ -1,118 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ButtonComment.ButttomComment_1"
     android:layout_marginTop="15dp"
+    android:layout_marginBottom="15dp"
     android:layout_marginLeft="10dp"
     android:layout_marginRight="10dp"
     android:background="@color/Silver">
-    <!--Todo 1-->
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/av1"
-        android:layout_width="50dp"
-        android:layout_height="40dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="10dp"
-        android:src="@drawable/avata1"
-        app:civ_border_color="#C0C0C0"
-        app:civ_border_width="1dp" />
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Night image goog detail"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="30dp"
-        android:layout_marginRight="120dp"
-        android:id="@+id/t1" />
-    <!--Todo 2-->
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/av2"
-        android:layout_width="50dp"
-        android:layout_height="40dp"
-        android:layout_below="@+id/av1"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/avata2"
-        app:civ_border_color="#C0C0C0"
-        app:civ_border_width="1dp" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Night image goog detail"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="40dp"
-        android:layout_marginRight="120dp"
-        android:layout_below="@+id/t1"
-        android:id="@+id/t2"/>
-    <!--Todo 3-->
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="50dp"
-        android:layout_height="40dp"
-        android:layout_below="@+id/av2"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/avata3"
-        app:civ_border_color="#C0C0C0"
-        app:civ_border_width="1dp"
-        android:id="@+id/av3"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Night image goog detail"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="40dp"
-        android:layout_marginRight="120dp"
-        android:layout_below="@+id/t2"
-        android:id="@+id/t3"/>
+        android:orientation="vertical">
+        <!--Todo 1-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:weightSum="4">
 
-    <!--Todo 4-->
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="50dp"
-        android:layout_height="40dp"
-        android:layout_below="@+id/av3"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/avata4"
-        app:civ_border_color="#C0C0C0"
-        app:civ_border_width="1dp"
-        android:id="@+id/av4"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Night image goog detail"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="40dp"
-        android:layout_marginRight="120dp"
-        android:layout_below="@+id/t3"
-        android:id="@+id/t4"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/avata1"
+                app:civ_border_color="#C0C0C0"
+                app:civ_border_width="1dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/t1c1"/>
+        </LinearLayout>
 
-    <!--Todo 5-->
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="50dp"
-        android:layout_height="40dp"
-        android:layout_below="@+id/av4"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/avata5"
-        app:civ_border_color="#C0C0C0"
-        app:civ_border_width="1dp" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Night image goog detail"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="40dp"
-        android:layout_marginRight="120dp"
-        android:layout_below="@+id/t4"/>
+        <!--Todo 2-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:weightSum="4">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/avata2"
+                android:layout_weight="1"
+                app:civ_border_color="#C0C0C0"
+                app:civ_border_width="1dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/t1c2"/>
+        </LinearLayout>
+
+        <!--Todo 3-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:weightSum="4">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/avata3"
+                android:layout_weight="1"
+                app:civ_border_color="#C0C0C0"
+                app:civ_border_width="1dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/t1c3"/>
+        </LinearLayout>
+
+        <!--Todo 4-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:weightSum="4">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/avata4"
+                android:layout_weight="1"
+                app:civ_border_color="#C0C0C0"
+                app:civ_border_width="1dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/t1c4"/>
+        </LinearLayout>
+
+        <!--Todo 5-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:weightSum="4">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/avata5"
+                android:layout_weight="1"
+                app:civ_border_color="#C0C0C0"
+                app:civ_border_width="1dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/t1c5"/>
+        </LinearLayout>
+    </LinearLayout>
 
 
-</RelativeLayout>
+</ScrollView>

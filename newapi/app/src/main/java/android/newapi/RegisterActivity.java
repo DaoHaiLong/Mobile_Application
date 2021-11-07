@@ -23,14 +23,6 @@ public class RegisterActivity extends AppCompatActivity {
         e2=(EditText) findViewById(R.id.TextPasswordR);
         e3=(EditText) findViewById(R.id.TextCPasswordR);
         b1=(Button)  findViewById(R.id.buttonRegis);
-        b2=(Button)  findViewById(R.id.buttonLogin1);
-        b2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent iten = new Intent(getApplicationContext(),LoginFaceBook.class);
-                startActivity(iten);
-            }
-        });
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

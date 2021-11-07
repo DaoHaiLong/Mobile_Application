@@ -17,10 +17,31 @@
         android:theme="@style/Theme.Newapi"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".RegisterActivity"
+            android:name=".FullScreenWatch.Fullscreen_video4"
+            android:exported="false" />
+        <activity
+            android:name=".FullScreenWatch.Fullscreen_video3"
+            android:exported="false" />
+        <activity
+            android:name=".FullScreenWatch.Fullscreen_video2"
+            android:exported="false" />
+        <activity
+            android:name=".FullScreenWatch.Fullscreen_video1"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationDetail.DetailNotification3"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationDetail.DetailNotification2"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationDetail.DetailNotification1"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
             android:exported="true" />
         <activity
-            android:name=".LoginFaceBook"
+            android:name=".RegisterActivity"
             android:exported="true" />
         <activity
             android:name=".Messe"
@@ -53,11 +74,23 @@
             android:name=".ButtonComment.ButttomComment_1"
             android:exported="false" />
         <activity
+            android:name=".ButtonComment.ButtonCommentFragmentWatch"
+            android:exported="false" />
+        <activity
+            android:name=".ButtonComment.ButtonCommentFragmentWatch2"
+            android:exported="false" />
+        <activity
+            android:name=".ButtonComment.ButtonCommentFragmentWatch3"
+            android:exported="false" />
+        <activity
+            android:name=".ButtonComment.ButtonCommentFragmentWatch4"
+            android:exported="false" />
+        <activity
             android:name=".DetailActivity"
             android:exported="false"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginFaceBook"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

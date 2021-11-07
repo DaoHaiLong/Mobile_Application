@@ -88,11 +88,10 @@ public class NewfeedFace extends Fragment implements View.OnClickListener {
         DefaultItemAnimator itemAnimator = new DefaultItemAnimator();
         recyclerView.setItemAnimator(itemAnimator);
         recyclerView.setNestedScrollingEnabled(false);
+//       cal api
+       ObjectJson();
 
-           ObjectJson();
-//        call tablayout button
-
-
+// call layout button
         Button button=(Button) view.findViewById(R.id.button2);
         Button button1=(Button) view.findViewById(R.id.button5);
         Button button2=(Button) view.findViewById(R.id.button8);

@@ -140,4 +140,72 @@
     <string name="cPass" translatable="false">Confirm Password</string>
     <string name="Regis" translatable="false">Register</string>
     <string name="Login" translatable="false">Login</string>
+
+    <!--    COMMENTS-->
+    <string name="t1c1" translatable="false"><b>Adam</b> \n<font size="15">Wowww!! Stunning news.</font></string>
+    <string name="t1c2" translatable="false"><b>Eva</b> \n<font size="15">I love this page.</font></string>
+    <string name="t1c3" translatable="false"><b>Coconut</b> \n<font size="15">The world is changing sooo fast.</font></string>
+    <string name="t1c4" translatable="false"><b>Pineapple</b> \n<font size="15">Hmmmmmm.</font></string>
+    <string name="t1c5" translatable="false"><b>Watermelon</b> \n<font size="15">Up-to-date.</font></string>
+
+    <string name="t2c1" translatable="false"><b>USTH</b> \n<font size="15">Keep up the good work.</font></string>
+    <string name="t2c2" translatable="false"><b>Hong Van</b> \n<font size="15">Love comics so much.</font></string>
+    <string name="t2c3" translatable="false"><b>Boy nhiều tiền</b> \n<font size="15">Mai phải đi mua ngay mới được.</font></string>
+    <string name="t2c4" translatable="false"><b>AloLoa</b> \n<font size="15">Quá là tuyệt vời.</font></string>
+    <string name="t2c5" translatable="false"><b>Internet</b> \n<font size="15">Cbi lấy tiền học đi mua hehe.</font></string>
+
+    <string name="t3" translatable="false"><b>Phòng Trọ Tây Hồ, Ba Đình, Hoàn Kiếm, Hà Nội - TC.Renting</b> \n<font size="15">Up!.</font></string>
+
+    <string name="t4c1" translatable="false"><b>Black Adam</b> \n<font size="15">Keep up the good work!!!</font></string>
+    <string name="t4c2" translatable="false"><b>Hong Van</b> \n<font size="15">Việt Nam cố lênnn.</font></string>
+    <string name="t4c3" translatable="false"><b>Boy nhiều tiền</b> \n<font size="15">Thắng phải party ngay.</font></string>
+    <string name="t4c4" translatable="false"><b>Wibu</b> \n<font size="15">Quá là tuyệt vời!!!</font></string>
+    <string name="t4c5" translatable="false"><b>USTH</b> \n<font size="15">Việt Nam cố lênnn.</font></string>
+
+    <string name="t5c1" translatable="false"><b>USTH EcoClub</b> \n<font size="15">Chủ tịch Hồ Chí Minh vĩ đại.</font></string>
+    <string name="t5c2" translatable="false"><b>Hong Van</b> \n<font size="15">Những vần thơ thật bay bổng.</font></string>
+    <string name="t5c3" translatable="false"><b>CNN</b> \n<font size="15">RESPECT!!!</font></string>
+    <string name="t5c4" translatable="false"><b>Lucky</b> \n<font size="15">What a great nation, a great leader</font></string>
+    <string name="t5c5" translatable="false"><b>USTH</b> \n<font size="15">Mãi nhớ ơn Bác.</font></string>
+
+    <!--    NOTIFICATION DETAILS-->
+    <string name="detail1" translatable="false">Chương trình học bổng France Excellence của Đại sứ quán Pháp tại Việt Nam là một trong những học bổng danh giá thường niên của chính phủ Pháp dành cho các sinh viên đến học tập và nghiên cứu tại Pháp. Đây cũng là một trong những học bổng có giá trị cao mà nhiều sinh viên hướng tới cho bậc học thạc sĩ và tiến sĩ.</string>
+    <string name="detail2" translatable="false">I had a great oppotunity to work with the Vietnam France University in HaNoi. Love this so muchh.</string>
+    <string name="detail3" translatable="false">I cannot wait to go to school. Love this so muchh.</string>
+    <string name="com1" translatable="false"><b>Pineapple</b> \n<font size="15"><b>User Name</b> Hmmmmmm.</font></string>
+    <string name="com2" translatable="false"><b>USTH EcoClub</b> \n<font size="15"><b>Pineapple</b> HaHaHa!!!</font></string>
+    <string name="com3" translatable="false"><b>User Name</b> \n<font size="10">Oct 4</font></string>
+
+    <!--Watch comment 1 -->
+
+    <string name="cmw1" translatable="false"><b>Litte Mix</b> \n<font size="15">Hope you guys enjoy our new song</font></string>
+    <string name="cmw1b" translatable="false"><b>Brendon</b> \n<font size="15">Huge boom coming out</font></string>
+    <string name="cmw1c" translatable="false"><b>jessy</b> \n<font size="15">1st Billboard go go!</font></string>
+    <string name="cmw1d" translatable="false"><b>Lmao</b> \n<font size="15">True master piece</font></string>
+    <string name="cmw1e" translatable="false"><b>BlackHammer</b> \n<font size="15">The song look really beautiful</font></string>
+
+    <!--Watch comment 2 -->
+
+    <string name="cmw2" translatable="false"><b>James</b> \n<font size="15">So intense </font></string>
+    <string name="cmw2b" translatable="false"><b>Thi lu</b> \n<font size="15">Go go T1, 100T suck</font></string>
+    <string name="cmw2c" translatable="false"><b>Pikachu</b> \n<font size="15">Im sell my house to all in T1</font></string>
+    <string name="cmw2d" translatable="false"><b>Lmao</b> \n<font size="15">what a nice match</font></string>
+    <string name="cmw2e" translatable="false"><b>Brendon</b> \n<font size="15">The referee is very beautiful</font></string>
+
+    <!--Watch comment 3 -->
+
+    <string name="cmw3" translatable="false"><b>Mica</b> \n<font size="15">Gotta watch this movie</font></string>
+    <string name="cmw3b" translatable="false"><b>Ed</b> \n<font size="15">So worth for 2 years fighting</font></string>
+    <string name="cmw3c" translatable="false"><b>jessy</b> \n<font size="15">Release the SynderVerse</font></string>
+    <string name="cmw3d" translatable="false"><b>Luke</b> \n<font size="15">True master piece</font></string>
+    <string name="cmw3e" translatable="false"><b>Dog</b> \n<font size="15">Whop whop</font></string>
+
+    <!--Watch comment 4 -->
+
+    <string name="cmw4" translatable="false"><b>Conan Child</b> \n<font size="15">anh Duy Lến</font></string>
+    <string name="cmw4b" translatable="false"><b>Nhung Trần</b> \n<font size="15">lỏd</font></string>
+    <string name="cmw4c" translatable="false"><b>Cao Xuân</b> \n<font size="15">Anh Duy k đi mua đũa nữa ah</font></string>
+    <string name="cmw4d" translatable="false"><b>Lmao</b> \n<font size="15">Nhìn ngon quá, xin thêm bánh mì đi anh</font></string>
+    <string name="cmw4e" translatable="false"><b>BlackHammer</b> \n<font size="15">Bánh mì này có chất riêng như bánh mì k anh</font></string>
+
 </resources>

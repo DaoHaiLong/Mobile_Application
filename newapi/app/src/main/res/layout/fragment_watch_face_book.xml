@@ -1,664 +1,734 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".WatchFaceBook">
 
     <!-- TODO: Update blank fragment layout -->
-    <ScrollView
-        android:id="@+id/scrollView"
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:id="@+id/swipe_refresh_layout">
+        <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:orientation="vertical">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:gravity="center_vertical"
-                android:paddingLeft="10dp"
-                android:text="@string/WATCH"/>
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/white"
-                android:orientation="horizontal">
-                <!---           Header                -->
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_marginTop="10dp"
-                        android:src="@drawable/watchlogo1" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="55dp"
-                        android:layout_marginTop="15dp"
-                        android:text="@string/face1"
-                        android:textSize="50px"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="130dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="55dp"
-                        android:layout_marginTop="45dp"
-                        android:text="@string/face1a"
-                        android:textSize="8dp"
-                        android:textStyle="italic" />
-                </RelativeLayout>
-            </LinearLayout>
-
-            <!--        Body       -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:orientation="vertical">
-                <RelativeLayout
+                <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginTop="40dp"
-                        android:text="@string/face1b"
-                        android:textColor="@android:color/holo_blue_light" />
-
-
-                    <VideoView
-                        android:id="@+id/video_view"
-                        android:layout_width="wrap_content"
-                        android:layout_height="500dp"
-                        android:layout_marginTop="100dp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginTop="10dp"
-                        android:text="@string/face1c" />
-                </RelativeLayout>
-
-                <RelativeLayout
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/WATCH"/>
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="13dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
                     android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginLeft="8dp"
-                        android:src="@drawable/newlike_comment" />
-
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginLeft="25dp"
-                        android:src="@drawable/newlove" />
-
-                    <TextView
+                    <!---           Header                -->
+                    <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="50dp"
-                        android:text="100K" />
+                        android:layout_alignParentLeft="true"
+                        android:orientation="horizontal">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
-                        android:text="@string/face1e" />
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/watchlogo1" />
 
-                </RelativeLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="55dp"
+                            android:layout_marginTop="15dp"
+                            android:text="@string/face1"
+                            android:textSize="50px"
+                            android:textStyle="bold" />
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="55dp"
+                            android:layout_marginTop="45dp"
+                            android:text="@string/face1a"
+                            android:textSize="8dp"
+                            android:textStyle="italic" />
+                    </RelativeLayout>
+                </LinearLayout>
 
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:layout_marginLeft="15dp"
-                        android:background="@color/white"
-                        android:src="@drawable/newlike" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="46dp"
-                        android:layout_marginTop="10dp"
-                        android:text="@string/New1h" />
-
-                    <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_marginLeft="155dp"
-                        android:layout_marginTop="6dp"
-                        android:background="@color/white"
-                        android:src="@drawable/new_coment_comment" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="190dp"
-                        android:layout_marginTop="11dp"
-                        android:text="@string/New1f" />
-
-                    <ImageView
-                        android:layout_width="28dp"
-                        android:layout_height="28dp"
-                        android:layout_marginLeft="310dp"
-                        android:layout_marginTop="6dp"
-                        android:background="@color/white"
-                        android:src="@drawable/new_share" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
-                        android:layout_marginTop="11dp"
-                        android:text="@string/New1g" />
-
-                </RelativeLayout>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="5dp"
-                android:background="@color/white"
-                android:orientation="horizontal">
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="60dp"
-                        android:layout_marginTop="10dp"
-                        android:src="@drawable/watchlogo2" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="55dp"
-                        android:layout_marginTop="15dp"
-                        android:text="@string/face2"
-                        android:textSize="40px"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="130dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="55dp"
-                        android:layout_marginTop="40dp"
-                        android:text="@string/face2a"
-                        android:textSize="10dp"
-                        android:textStyle="italic" />
-                </RelativeLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="5dp"
-                android:orientation="vertical">
-
-                <RelativeLayout
+                <!--        Body       -->
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
                     android:layout_marginTop="5dp"
                     android:orientation="vertical">
-
-                    <VideoView
-                        android:id="@+id/video_view2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="400dp"
-                        android:layout_marginTop="60dp" />
-
-                    <TextView
+                    <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/face2b" />
-                    <TextView
+                        android:layout_alignParentTop="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="40dp"
+                            android:text="@string/face1b"
+                            android:textColor="@android:color/holo_blue_light" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/face1c" />
+                        <VideoView
+                            android:id="@+id/video_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="500dp"
+                            android:layout_marginTop="80dp" />
+
+                        <Button
+                            android:id="@+id/full1"
+                            android:layout_width="55dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="80dp"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:drawableLeft="@drawable/ic_fullscreen_white"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            app:iconPadding="5dp"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:text="@string/face2c" />
-                </RelativeLayout>
+                        android:layout_marginTop="13dp"
+                        android:orientation="horizontal">
 
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="8dp"
+                            android:src="@drawable/newlike_comment" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="25dp"
+                            android:src="@drawable/newlove" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:text="100K" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="@string/face1e" />
+
+                    </RelativeLayout>
+                </LinearLayout>
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="13dp"
-                    android:orientation="horizontal">
+                    android:layout_height="35dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/white"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
 
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginLeft="8dp"
-                        android:src="@drawable/newlike_comment" />
-
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginLeft="25dp"
-                        android:src="@drawable/newlove" />
-
-                    <TextView
+                    <Button
+                        android:id="@+id/butwatch1"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="50dp"
-                        android:text="1k" />
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:backgroundTint="@color/Silver"
+                        android:drawableLeft="@drawable/likes"
+                        android:gravity="center"
+                        android:text="like"
+                        android:textColor="@android:color/black"
+                        app:iconPadding="5dp"
+                        tools:ignore="TouchTargetSizeCheck" />
 
-                    <TextView
+                    <Button
+                        android:id="@+id/butwatch2"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:backgroundTint="@color/Silver"
+                        android:drawableLeft="@drawable/ic_stat_name"
+                        android:paddingLeft="10dp"
+                        android:text="Comment"
+                        android:textColor="@android:color/black"
+                        android:visibility="visible"
+                        app:iconPadding="2dp"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <Button
+                        android:id="@+id/butwatch3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_alignParentRight="true"
-                        android:text="@string/face2e" />
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/Silver"
+                        android:drawableLeft="@drawable/ic_share_name"
+                        android:gravity="center"
+                        android:text="Share"
+                        android:textColor="@android:color/black"
+                        app:iconPadding="5dp"
+                        tools:ignore="TouchTargetSizeCheck" />
 
                 </RelativeLayout>
 
-                <!--        Coment         -->
-                <RelativeLayout
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_marginTop="5dp"
+                    android:background="@color/white"
                     android:orientation="horizontal">
 
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:layout_marginLeft="15dp"
-                        android:background="@color/white"
-                        android:src="@drawable/newlike" />
-
-                    <TextView
+                    <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="46dp"
-                        android:layout_marginTop="10dp"
-                        android:text="@string/New1h" />
+                        android:layout_alignParentLeft="true"
+                        android:orientation="horizontal">
 
-                    <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_marginLeft="155dp"
-                        android:layout_marginTop="6dp"
-                        android:background="@color/white"
-                        android:src="@drawable/new_coment_comment" />
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/watchlogo2" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="190dp"
-                        android:layout_marginTop="11dp"
-                        android:text="@string/New1f" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="55dp"
+                            android:layout_marginTop="15dp"
+                            android:text="@string/face2"
+                            android:textSize="40px"
+                            android:textStyle="bold" />
 
-                    <ImageView
-                        android:layout_width="28dp"
-                        android:layout_height="28dp"
-                        android:layout_marginLeft="310dp"
-                        android:layout_marginTop="6dp"
-                        android:background="@color/white"
-                        android:src="@drawable/new_share" />
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="55dp"
+                            android:layout_marginTop="40dp"
+                            android:text="@string/face2a"
+                            android:textSize="10dp"
+                            android:textStyle="italic" />
+                    </RelativeLayout>
+                </LinearLayout>
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
-                        android:layout_marginTop="11dp"
-                        android:text="@string/New1g" />
-
-                </RelativeLayout>
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="5dp"
-                android:background="@color/white"
-                android:orientation="horizontal">
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="60dp"
-                        android:layout_marginTop="10dp"
-                        android:src="@drawable/watchlogo3" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="55dp"
-                        android:layout_marginTop="20dp"
-                        android:text="@string/face3"
-                        android:textSize="40px"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="130dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="55dp"
-                        android:layout_marginTop="45dp"
-                        android:text="@string/face3a"
-                        android:textSize="10dp"
-                        android:textStyle="italic" />
-                </RelativeLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="5dp"
-                android:orientation="vertical">
-
-                <RelativeLayout
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
                     android:layout_marginTop="5dp"
                     android:orientation="vertical">
 
-                    <TextView
+                    <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="8dp"
-                        android:text="@string/face3b" />
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
 
-                    <TextView
+                        <VideoView
+                            android:id="@+id/video_view2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="400dp"
+                            android:layout_marginTop="60dp" />
+
+                        <Button
+                            android:id="@+id/full2"
+                            android:layout_width="55dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="60dp"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:drawableLeft="@drawable/ic_fullscreen_white"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            app:iconPadding="5dp"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/face2b" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/face2c" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginTop="20dp"
-                        android:text="@string/face3c"
-                        android:textColor="@android:color/holo_blue_light" />
+                        android:layout_marginTop="13dp"
+                        android:orientation="horizontal">
 
-                    <VideoView
-                        android:id="@+id/video_view3"
-                        android:layout_width="match_parent"
-                        android:layout_height="400dp"
-                        android:layout_marginTop="50dp" />
-                </RelativeLayout>
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="8dp"
+                            android:src="@drawable/newlike_comment" />
 
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="25dp"
+                            android:src="@drawable/newlove" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:text="1k" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="@string/face2e" />
+
+                    </RelativeLayout>
+
+                    <!--        Coment         -->
+                </LinearLayout>
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:orientation="horizontal">
+                    android:layout_height="35dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/white"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
 
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginLeft="8dp"
-                        android:src="@drawable/newlike_comment" />
-
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginLeft="25dp"
-                        android:src="@drawable/newlove" />
-
-                    <TextView
+                    <Button
+                        android:id="@+id/butwatch4"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="50dp"
-                        android:text="2k" />
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:backgroundTint="@color/Silver"
+                        android:drawableLeft="@drawable/likes"
+                        android:gravity="center"
+                        android:text="like"
+                        android:textColor="@android:color/black"
+                        app:iconPadding="5dp"
+                        tools:ignore="TouchTargetSizeCheck" />
 
-                    <TextView
+                    <Button
+                        android:id="@+id/butwatch5"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:backgroundTint="@color/Silver"
+                        android:drawableLeft="@drawable/ic_stat_name"
+                        android:paddingLeft="10dp"
+                        android:text="Comment"
+                        android:textColor="@android:color/black"
+                        android:visibility="visible"
+                        app:iconPadding="2dp"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <Button
+                        android:id="@+id/butwatch6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_alignParentRight="true"
-                        android:text="@string/face3e" />
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/Silver"
+                        android:drawableLeft="@drawable/ic_share_name"
+                        android:gravity="center"
+                        android:text="Share"
+                        android:textColor="@android:color/black"
+                        app:iconPadding="5dp"
+                        tools:ignore="TouchTargetSizeCheck" />
 
                 </RelativeLayout>
-
-                <!--        Coment         -->
-                <RelativeLayout
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_marginTop="5dp"
+                    android:background="@color/white"
                     android:orientation="horizontal">
 
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:layout_marginLeft="15dp"
-                        android:background="@color/white"
-                        android:src="@drawable/newlike" />
-
-                    <TextView
+                    <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="46dp"
-                        android:layout_marginTop="10dp"
-                        android:text="@string/New1h" />
+                        android:layout_alignParentLeft="true"
+                        android:orientation="horizontal">
 
-                    <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_marginLeft="155dp"
-                        android:layout_marginTop="6dp"
-                        android:background="@color/white"
-                        android:src="@drawable/new_coment_comment" />
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/watchlogo3" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="190dp"
-                        android:layout_marginTop="11dp"
-                        android:text="@string/New1f" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="55dp"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/face3"
+                            android:textSize="40px"
+                            android:textStyle="bold" />
 
-                    <ImageView
-                        android:layout_width="28dp"
-                        android:layout_height="28dp"
-                        android:layout_marginLeft="310dp"
-                        android:layout_marginTop="6dp"
-                        android:background="@color/white"
-                        android:src="@drawable/new_share" />
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="55dp"
+                            android:layout_marginTop="45dp"
+                            android:text="@string/face3a"
+                            android:textSize="10dp"
+                            android:textStyle="italic" />
+                    </RelativeLayout>
+                </LinearLayout>
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
-                        android:layout_marginTop="11dp"
-                        android:text="@string/New1g" />
-
-                </RelativeLayout>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="5dp"
-                android:background="@color/white"
-                android:orientation="horizontal">
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="60dp"
-                        android:layout_marginTop="10dp"
-                        android:src="@drawable/watchlogo4" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="55dp"
-                        android:layout_marginTop="20dp"
-                        android:text="@string/face4"
-                        android:textSize="40px"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="130dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="55dp"
-                        android:layout_marginTop="50dp"
-                        android:text="@string/face4a"
-                        android:textSize="10dp"
-                        android:textStyle="italic" />
-                </RelativeLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="5dp"
-                android:orientation="vertical">
-
-                <RelativeLayout
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
                     android:layout_marginTop="5dp"
                     android:orientation="vertical">
 
-                    <TextView
+                    <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/face4b" />
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
 
-                    <TextView
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:text="@string/face3b" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/face3c"
+                            android:textColor="@android:color/holo_blue_light" />
+
+                        <VideoView
+                            android:id="@+id/video_view3"
+                            android:layout_width="match_parent"
+                            android:layout_height="400dp"
+                            android:layout_marginTop="50dp" />
+
+                        <Button
+                            android:id="@+id/full3"
+                            android:layout_width="55dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="50dp"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:drawableLeft="@drawable/ic_fullscreen_white"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            app:iconPadding="5dp"
+                            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:text="@string/face4c"
-                        android:textColor="@android:color/holo_blue_light" />
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
 
-                    <VideoView
-                        android:id="@+id/video_view4"
-                        android:layout_width="400dp"
-                        android:layout_height="500dp"
-                        android:layout_marginTop="65dp" />
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="8dp"
+                            android:src="@drawable/newlike_comment" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="40dp"
-                        android:text="@string/WatchMore" />
-                </RelativeLayout>
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="25dp"
+                            android:src="@drawable/newlove" />
 
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:text="2k" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="@string/face3e" />
+
+                    </RelativeLayout>
+
+                    <!--        Coment         -->
+                </LinearLayout>
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="13dp"
-                    android:orientation="horizontal">
+                    android:layout_height="35dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/white"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
 
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginLeft="8dp"
-                        android:src="@drawable/newlike_comment" />
-
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginLeft="25dp"
-                        android:src="@drawable/newlove" />
-
-                    <TextView
+                    <Button
+                        android:id="@+id/butwatch7"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="50dp"
-                        android:text="1.900k" />
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:backgroundTint="@color/Silver"
+                        android:drawableLeft="@drawable/likes"
+                        android:gravity="center"
+                        android:text="like"
+                        android:textColor="@android:color/black"
+                        app:iconPadding="5dp"
+                        tools:ignore="TouchTargetSizeCheck" />
 
-                    <TextView
+                    <Button
+                        android:id="@+id/butwatch8"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:backgroundTint="@color/Silver"
+                        android:drawableLeft="@drawable/ic_stat_name"
+                        android:paddingLeft="10dp"
+                        android:text="Comment"
+                        android:textColor="@android:color/black"
+                        android:visibility="visible"
+                        app:iconPadding="2dp"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <Button
+                        android:id="@+id/butwatch9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_alignParentRight="true"
-                        android:text="@string/face4e" />
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/Silver"
+                        android:drawableLeft="@drawable/ic_share_name"
+                        android:gravity="center"
+                        android:text="Share"
+                        android:textColor="@android:color/black"
+                        app:iconPadding="5dp"
+                        tools:ignore="TouchTargetSizeCheck" />
 
                 </RelativeLayout>
-
-                <!--        Coment         -->
-                <RelativeLayout
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_marginTop="5dp"
+                    android:background="@color/white"
                     android:orientation="horizontal">
 
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:layout_marginLeft="15dp"
-                        android:background="@color/white"
-                        android:src="@drawable/newlike" />
-
-                    <TextView
+                    <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="46dp"
-                        android:layout_marginTop="10dp"
-                        android:text="@string/New1h" />
+                        android:layout_alignParentLeft="true"
+                        android:orientation="horizontal">
 
-                    <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_marginLeft="155dp"
-                        android:layout_marginTop="6dp"
-                        android:background="@color/white"
-                        android:src="@drawable/new_coment_comment" />
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/watchlogo4" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="55dp"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/face4"
+                            android:textSize="40px"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="55dp"
+                            android:layout_marginTop="50dp"
+                            android:text="@string/face4a"
+                            android:textSize="10dp"
+                            android:textStyle="italic" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="190dp"
-                        android:layout_marginTop="11dp"
-                        android:text="@string/New1f" />
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
 
-                    <ImageView
-                        android:layout_width="28dp"
-                        android:layout_height="28dp"
-                        android:layout_marginLeft="310dp"
-                        android:layout_marginTop="6dp"
-                        android:background="@color/white"
-                        android:src="@drawable/new_share" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/face4b" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/face4c"
+                            android:textColor="@android:color/holo_blue_light" />
+                        <VideoView
+                            android:id="@+id/video_view4"
+                            android:layout_width="400dp"
+                            android:layout_height="500dp"
+                            android:layout_marginTop="65dp" />
+
+                        <Button
+                            android:id="@+id/full4"
+                            android:layout_width="55dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="60dp"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:drawableLeft="@drawable/ic_fullscreen_white"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            app:iconPadding="5dp"
+                            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="40dp"
+                            android:text="@string/WatchMore" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="13dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="8dp"
+                            android:src="@drawable/newlike_comment" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="25dp"
+                            android:src="@drawable/newlove" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:text="1.900k" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="@string/face4e" />
+
+                    </RelativeLayout>
+
+                    <!--        Coment         -->
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/white"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <Button
+                        android:id="@+id/butwatch10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:backgroundTint="@color/Silver"
+                        android:drawableLeft="@drawable/likes"
+                        android:gravity="center"
+                        android:text="like"
+                        android:textColor="@android:color/black"
+                        app:iconPadding="5dp"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <Button
+                        android:id="@+id/butwatch11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:backgroundTint="@color/Silver"
+                        android:drawableLeft="@drawable/ic_stat_name"
+                        android:paddingLeft="10dp"
+                        android:text="Comment"
+                        android:textColor="@android:color/black"
+                        android:visibility="visible"
+                        app:iconPadding="2dp"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <Button
+                        android:id="@+id/butwatch12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_alignParentRight="true"
-                        android:layout_marginTop="11dp"
-                        android:text="@string/New1g" />
-
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/Silver"
+                        android:drawableLeft="@drawable/ic_share_name"
+                        android:gravity="center"
+                        android:text="Share"
+                        android:textColor="@android:color/black"
+                        app:iconPadding="5dp"
+                        tools:ignore="TouchTargetSizeCheck" />
                 </RelativeLayout>
             </LinearLayout>
-        </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
 
-    </ScrollView>
-</FrameLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

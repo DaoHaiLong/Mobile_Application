@@ -6,70 +6,76 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:id="@+id/container">
+
     <ImageView
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:src="@drawable/facebooklogo"
+        android:layout_width="241dp"
+        android:layout_height="268dp"
         android:layout_above="@+id/TextEmailR"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="50dp"/>
+        android:layout_marginBottom="75dp"
+        android:src="@drawable/facebooklogo" />
 
     <EditText
         android:id="@+id/TextEmailR"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
         android:layout_marginBottom="50px"
         android:ems="12"
         android:hint="@string/Email"
         android:inputType="textPersonName"
-        />
+        android:minHeight="48dp" />
 
     <EditText
         android:id="@+id/TextPasswordR"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="@string/Pass"
-        android:layout_marginBottom="50px"
         android:layout_below="@+id/TextEmailR"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="50px"
         android:ems="12"
-        android:inputType="textPassword" />
+        android:hint="@string/Pass"
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
 
     <EditText
         android:id="@+id/TextCPasswordR"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/TextPasswordR"
-        android:layout_centerInParent="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
         android:layout_marginBottom="40dp"
         android:ems="12"
         android:hint="@string/cPass"
         android:inputType="textPassword"
-        />
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_below="@+id/TextCPasswordR"
-        android:layout_centerHorizontal="true">
+        android:minHeight="48dp" />
 
-        <Button
-            android:id="@+id/buttonRegis"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/TextCPasswordR"
-            android:layout_marginRight="30px"
-            android:background="@color/blue"
-            android:text="@string/Regis" />
-        <Button
-            android:id="@+id/buttonLogin1"
-            android:layout_width="110dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/TextCPasswordR"
-            android:background="@color/blue"
-            android:text="@string/Login" />
-    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonRegis"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="106dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginRight="30px"
+        android:layout_marginBottom="62dp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/Regis" />
+
 
 </RelativeLayout>

@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class LoginFaceBook extends AppCompatActivity {
     EditText e1,e2;
-    Button b1;
+    Button b1,createnewaccount;
     DataBases db;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +40,14 @@ public class LoginFaceBook extends AppCompatActivity {
                 else{
                     Toast.makeText(getApplicationContext(),"Wrong email or password!!",Toast.LENGTH_SHORT).show();
             }
+            }
+        });
+        createnewaccount=findViewById(R.id.buttonnewacount);
+        createnewaccount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentregiter=new Intent(getApplicationContext(),RegisterActivity.class);
+                startActivity(intentregiter);
             }
         });
     }

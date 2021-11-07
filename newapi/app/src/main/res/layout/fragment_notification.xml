@@ -26,6 +26,8 @@
             android:layout_width="match_parent"
             android:layout_height="75dp"
             android:padding="5dp"
+            android:id="@+id/no1"
+            android:background="#ACD6F8"
             android:orientation="horizontal"
             android:weightSum="4">
             <RelativeLayout
@@ -38,8 +40,7 @@
                     android:layout_height="match_parent"
                     android:src="@drawable/eco"
                     app:civ_border_color="#C0C0C0"
-                    app:civ_border_width="1dp"
-                    />
+                    app:civ_border_width="1dp" />
 
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="20dp"
@@ -60,6 +61,7 @@
             android:layout_width="match_parent"
             android:layout_height="75dp"
             android:padding="5dp"
+            android:id="@+id/no2"
             android:background="#ACD6F8"
             android:orientation="horizontal"
             android:weightSum="4">
@@ -96,6 +98,7 @@
             android:layout_width="match_parent"
             android:layout_height="75dp"
             android:padding="5dp"
+            android:id="@+id/no3"
             android:background="#ACD6F8"
             android:orientation="horizontal"
             android:weightSum="4">
@@ -136,6 +139,8 @@
             android:layout_width="match_parent"
             android:layout_height="75dp"
             android:padding="5dp"
+            android:id="@+id/no4"
+            android:background="#ACD6F8"
             android:orientation="horizontal"
             android:weightSum="4">
             <RelativeLayout
@@ -168,6 +173,7 @@
             android:layout_width="match_parent"
             android:layout_height="75dp"
             android:padding="5dp"
+            android:id="@+id/no5"
             android:background="#ACD6F8"
             android:orientation="horizontal"
             android:weightSum="4">
@@ -201,6 +207,7 @@
             android:layout_width="match_parent"
             android:layout_height="75dp"
             android:padding="5dp"
+            android:id="@+id/no6"
             android:background="#ACD6F8"
             android:orientation="horizontal"
             android:weightSum="4">
@@ -235,6 +242,8 @@
             android:layout_width="match_parent"
             android:layout_height="75dp"
             android:padding="5dp"
+            android:id="@+id/no7"
+            android:background="#ACD6F8"
             android:orientation="horizontal"
             android:weightSum="4">
             <RelativeLayout
@@ -267,6 +276,8 @@
             android:layout_width="match_parent"
             android:layout_height="75dp"
             android:padding="5dp"
+            android:id="@+id/no8"
+            android:background="#ACD6F8"
             android:orientation="horizontal"
             android:weightSum="4">
             <RelativeLayout
@@ -298,6 +309,8 @@
             android:layout_width="match_parent"
             android:layout_height="75dp"
             android:padding="5dp"
+            android:id="@+id/no9"
+            android:background="#ACD6F8"
             android:orientation="horizontal"
             android:weightSum="4">
             <RelativeLayout
@@ -330,6 +343,8 @@
             android:layout_width="match_parent"
             android:layout_height="75dp"
             android:padding="5dp"
+            android:id="@+id/no10"
+            android:background="#ACD6F8"
             android:orientation="horizontal"
             android:weightSum="4">
             <RelativeLayout

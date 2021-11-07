@@ -339,6 +339,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:backgroundTint="#DC0A73E3"
-            android:text="@string/out"/>
+            android:text="@string/out"
+            android:id="@+id/buttonlogout"/>
     </LinearLayout>
 </ScrollView>
