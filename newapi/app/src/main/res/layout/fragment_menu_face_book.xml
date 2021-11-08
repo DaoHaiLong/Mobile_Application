@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".Menu"
-        android:background="#B4DDDADA"
+        android:background="@color/white"
         android:orientation="vertical">
         <!-- Header-->
         <RelativeLayout
