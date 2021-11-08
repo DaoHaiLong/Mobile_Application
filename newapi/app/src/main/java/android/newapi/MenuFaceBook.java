@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -54,6 +55,7 @@ public class MenuFaceBook extends Fragment {
         // Inflate the layout for this fragment
 
         View view=  inflater.inflate(R.layout.fragment_menu_face_book, container, false);
+        ImageView imageView=view.findViewById(R.id.user);
         Button buttonlogout =(Button) view.findViewById(R.id.buttonlogout);
         buttonlogout.setOnClickListener(new View.OnClickListener() {
             @Override

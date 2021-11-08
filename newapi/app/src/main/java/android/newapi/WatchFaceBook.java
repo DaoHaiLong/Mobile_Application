@@ -1,6 +1,7 @@
 package android.newapi;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.newapi.ButtonComment.ButtonCommentFragmentWatch;
 import android.newapi.ButtonComment.ButtonCommentFragmentWatch2;
@@ -15,6 +16,7 @@ import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -106,6 +108,60 @@ public class WatchFaceBook extends Fragment  implements View.OnClickListener{
         Button butw1=(Button) view.findViewById(R.id.butwatch5);
         Button butw2=(Button) view.findViewById(R.id.butwatch8);
         Button butw3=(Button) view.findViewById(R.id.butwatch11);
+
+//        Background button like
+        Button but=(Button) view.findViewById(R.id.butwatch1);
+        Button but1=(Button) view.findViewById(R.id.butwatch4);
+        Button but2=(Button) view.findViewById(R.id.butwatch7);
+        Button but3=(Button) view.findViewById(R.id.butwatch10);
+        but.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if(event.getAction() == MotionEvent.ACTION_DOWN) {
+                    but.setBackgroundColor(Color.BLUE);
+                }
+                else if (event.getAction()==MotionEvent.ACTION_UP){
+                    but.setBackgroundColor(0xE8E8E8);
+                }
+                return false;
+            }
+        });
+        but1.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if(event.getAction() == MotionEvent.ACTION_DOWN) {
+                    but1.setBackgroundColor(Color.BLUE);
+                }
+                else if (event.getAction()==MotionEvent.ACTION_UP){
+                    but1.setBackgroundColor(0xE8E8E8);
+                }
+                return false;
+            }
+        });
+        but2.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if(event.getAction() == MotionEvent.ACTION_DOWN) {
+                    but2.setBackgroundColor(Color.BLUE);
+                }
+                else if (event.getAction()==MotionEvent.ACTION_UP){
+                    but2.setBackgroundColor(0xE8E8E8);
+                }
+                return false;
+            }
+        });
+        but3.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if(event.getAction() == MotionEvent.ACTION_DOWN) {
+                    but3.setBackgroundColor(Color.BLUE);
+                }
+                else if (event.getAction()==MotionEvent.ACTION_UP){
+                    but3.setBackgroundColor(0xE8E8E8);
+                }
+                return false;
+            }
+        });
 
         butw.setOnClickListener( this);
         butw1.setOnClickListener(this);

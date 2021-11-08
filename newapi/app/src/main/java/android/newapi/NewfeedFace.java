@@ -1,5 +1,6 @@
 package android.newapi;
 
+import android.graphics.Color;
 import android.newapi.ButtonComment.ButttomComment_1;
 import android.newapi.ButtonComment.ButttomComment_2;
 import android.newapi.ButtonComment.ButttomComment_3;
@@ -19,6 +20,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -91,7 +93,7 @@ public class NewfeedFace extends Fragment implements View.OnClickListener {
 //       cal api
        ObjectJson();
 
-// call layout button
+// call layout button comment
         Button button=(Button) view.findViewById(R.id.button2);
         Button button1=(Button) view.findViewById(R.id.button5);
         Button button2=(Button) view.findViewById(R.id.button8);
@@ -114,6 +116,74 @@ public class NewfeedFace extends Fragment implements View.OnClickListener {
         img1.setOnClickListener(this);
         img2.setOnClickListener(this);
         img3.setOnClickListener(this);
+
+        // call background button
+        Button bt=(Button) view.findViewById(R.id.button1);
+        Button bt1=(Button) view.findViewById(R.id.button4);
+        Button bt2=(Button) view.findViewById(R.id.button7);
+        Button bt3=(Button) view.findViewById(R.id.button10);
+        Button bt4=(Button) view.findViewById(R.id.button13);
+
+        bt.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+              if(event.getAction() == MotionEvent.ACTION_DOWN) {
+                    bt.setBackgroundColor(Color.BLUE);
+                }
+              else if (event.getAction()==MotionEvent.ACTION_UP){
+                  bt.setBackgroundColor(0xE8E8E8);
+              }
+                return false;
+            }
+        });
+        bt1.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if(event.getAction() == MotionEvent.ACTION_DOWN) {
+                    bt1.setBackgroundColor(Color.BLUE);
+                }
+                else if (event.getAction()==MotionEvent.ACTION_UP){
+                    bt1.setBackgroundColor(0xE8E8E8);
+                }
+                return false;
+            }
+        });
+        bt2.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if(event.getAction() == MotionEvent.ACTION_DOWN) {
+                    bt2.setBackgroundColor(Color.BLUE);
+                }
+                else if (event.getAction()==MotionEvent.ACTION_UP){
+                    bt2.setBackgroundColor(0xE8E8E8);
+                }
+                return false;
+            }
+        });
+        bt3.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if(event.getAction() == MotionEvent.ACTION_DOWN) {
+                    bt3.setBackgroundColor(Color.BLUE);
+                }
+                else if (event.getAction()==MotionEvent.ACTION_UP){
+                    bt3.setBackgroundColor(0xE8E8E8);
+                }
+                return false;
+            }
+        });
+        bt4.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if(event.getAction() == MotionEvent.ACTION_DOWN) {
+                    bt4.setBackgroundColor(Color.BLUE);
+                }
+                else if (event.getAction()==MotionEvent.ACTION_UP){
+                    bt4.setBackgroundColor(0xE8E8E8);
+                }
+                return false;
+            }
+        });
 
         return view;
     }

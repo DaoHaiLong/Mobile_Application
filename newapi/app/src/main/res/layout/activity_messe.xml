@@ -1,9 +1,461 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Messe">
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical">
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical">
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:layout_marginTop="10dp">
+     <de.hdodenhof.circleimageview.CircleImageView
+         android:layout_width="60dp"
+         android:layout_height="50dp"
+         android:src="@drawable/avatar"
+         app:civ_border_width="1dp"
+         android:id="@+id/imgaright"
+         android:layout_marginTop="20dp"
+         android:layout_marginLeft="20dp"/>
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Chats"
+         android:layout_marginLeft="90dp"
+         android:layout_marginTop="20dp"
+         android:textSize="30dp"
+         android:textStyle="bold" />
+     <ImageView
+         android:layout_width="25dp"
+         android:layout_height="25dp"
+         android:layout_alignParentRight="true"
+         android:layout_marginTop="25dp"
+         android:layout_marginRight="40dp"
+         android:src="@drawable/messengercamera"/>
+     <ImageView
+         android:layout_width="25dp"
+         android:layout_height="25dp"
+         android:layout_alignParentRight="true"
+         android:layout_marginTop="25dp"
+         android:layout_marginRight="5dp"
+         android:src="@drawable/pencilmesse"/>
+     </RelativeLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+     <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical"
+         android:layout_marginTop="5dp">
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                    <SearchView
+                        android:layout_width="310dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="58dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginEnd="43dp"
+                        android:backgroundTint="@color/black"
+                        android:iconifiedByDefault="false"
+                        android:outlineAmbientShadowColor="@color/black"
+                        android:queryBackground="@android:color/transparent"
+                        android:queryHint="Usth" />
+               </LinearLayout>
+
+               <HorizontalScrollView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="20dp"
+                   tools:ignore="SpeakableTextPresentCheck">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:orientation="horizontal">
+
+                         <de.hdodenhof.circleimageview.CircleImageView
+                             android:layout_width="60dp"
+                             android:layout_height="60dp"
+                             android:layout_marginLeft="20dp"
+                             android:paddingTop="10dp"
+                             android:src="@drawable/avata1" />
+
+                         <de.hdodenhof.circleimageview.CircleImageView
+                             android:layout_width="60dp"
+                             android:layout_height="60dp"
+                             android:layout_marginLeft="10dp"
+                             android:paddingTop="10dp"
+                             android:src="@drawable/avata2" />
+
+                         <de.hdodenhof.circleimageview.CircleImageView
+                             android:layout_width="60dp"
+                             android:layout_height="60dp"
+                             android:layout_marginLeft="10dp"
+                             android:paddingTop="10dp"
+                             android:src="@drawable/avata3" />
+
+                         <de.hdodenhof.circleimageview.CircleImageView
+                             android:layout_width="60dp"
+                             android:layout_height="60dp"
+                             android:layout_marginLeft="10dp"
+                             android:paddingTop="10dp"
+                             android:src="@drawable/avata4" />
+
+                         <de.hdodenhof.circleimageview.CircleImageView
+                             android:layout_width="60dp"
+                             android:layout_height="60dp"
+                             android:layout_marginLeft="10dp"
+                             android:paddingTop="10dp"
+                             android:src="@drawable/avata5" />
+
+                         <de.hdodenhof.circleimageview.CircleImageView
+                             android:layout_width="60dp"
+                             android:layout_height="60dp"
+                             android:layout_marginLeft="10dp"
+                             android:paddingTop="10dp"
+                             android:src="@drawable/ava5" />
+
+                         <de.hdodenhof.circleimageview.CircleImageView
+                             android:layout_width="60dp"
+                             android:layout_height="60dp"
+                             android:layout_marginLeft="10dp"
+                             android:paddingTop="10dp"
+                             android:src="@drawable/ava6" />
+
+                         <de.hdodenhof.circleimageview.CircleImageView
+                             android:layout_width="60dp"
+                             android:layout_height="60dp"
+                             android:layout_marginLeft="10dp"
+                             android:paddingTop="10dp"
+                             android:src="@drawable/ava7" />
+                    </LinearLayout>
+               </HorizontalScrollView>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:layout_marginTop="20dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                         <de.hdodenhof.circleimageview.CircleImageView
+                             android:layout_width="60dp"
+                             android:layout_height="60dp"
+                             android:layout_marginLeft="10dp"
+                             android:src="@drawable/ava4" />
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="USTH"
+                             android:textStyle="bold"
+                             android:layout_alignParentLeft="true"
+                             android:paddingLeft="90dp"
+                             android:paddingTop="10dp"/>
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentLeft="true"
+                             android:paddingLeft="90dp"
+                             android:paddingTop="30dp"
+                             android:text="Đại Học Khoa Học và Công Nghệ Hà Nội - USTH      4 year ago" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/avata1" />
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="Đặng Sơn"
+                             android:textStyle="bold"
+                             android:layout_alignParentLeft="true"
+                             android:paddingLeft="90dp"
+                             android:paddingTop="10dp"/>
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="okke .15:29"
+                             android:layout_alignParentLeft="true"
+                             android:paddingLeft="90dp"
+                             android:paddingTop="30dp"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                         <de.hdodenhof.circleimageview.CircleImageView
+                             android:layout_width="60dp"
+                             android:layout_height="60dp"
+                             android:layout_marginLeft="10dp"
+                             android:src="@drawable/avata2" />
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="Long"
+                             android:textStyle="bold"
+                             android:layout_alignParentLeft="true"
+                             android:paddingLeft="90dp"
+                             android:paddingTop="10dp"/>
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentLeft="true"
+                             android:paddingLeft="90dp"
+                             android:paddingTop="30dp"
+                             android:text="tối đi đá bóng nhé. 17:30" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                         <de.hdodenhof.circleimageview.CircleImageView
+                             android:layout_width="60dp"
+                             android:layout_height="60dp"
+                             android:layout_marginLeft="10dp"
+                             android:src="@drawable/avata3" />
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="Chương "
+                             android:textStyle="bold"
+                             android:layout_alignParentLeft="true"
+                             android:paddingLeft="90dp"
+                             android:paddingTop="10dp"/>
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentLeft="true"
+                             android:paddingLeft="90dp"
+                             android:paddingTop="30dp"
+                             android:text="Ok luôn  17:31" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                         <de.hdodenhof.circleimageview.CircleImageView
+                             android:layout_width="60dp"
+                             android:layout_height="60dp"
+                             android:layout_marginLeft="10dp"
+                             android:src="@drawable/avata4" />
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="Hiếu "
+                             android:textStyle="bold"
+                             android:layout_alignParentLeft="true"
+                             android:paddingLeft="90dp"
+                             android:paddingTop="10dp"/>
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentLeft="true"
+                             android:paddingLeft="90dp"
+                             android:paddingTop="30dp"
+                             android:text=" Ae làm đến đâu rồi  20:29" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                         <de.hdodenhof.circleimageview.CircleImageView
+                             android:layout_width="60dp"
+                             android:layout_height="60dp"
+                             android:layout_marginLeft="10dp"
+                             android:src="@drawable/avata5" />
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="Hòa DC "
+                             android:textStyle="bold"
+                             android:layout_alignParentLeft="true"
+                             android:paddingLeft="90dp"
+                             android:paddingTop="10dp"/>
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentLeft="true"
+                             android:paddingLeft="90dp"
+                             android:paddingTop="30dp"
+                             android:text="Bạn ơi cho hỏi chút 21:59 " />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                         <de.hdodenhof.circleimageview.CircleImageView
+                             android:layout_width="60dp"
+                             android:layout_height="60dp"
+                             android:layout_marginLeft="10dp"
+                             android:src="@drawable/ava3" />
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="Đoàn Nam "
+                             android:textStyle="bold"
+                             android:layout_alignParentLeft="true"
+                             android:paddingLeft="90dp"
+                             android:paddingTop="10dp"/>
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentLeft="true"
+                             android:paddingLeft="90dp"
+                             android:paddingTop="30dp"
+                             android:text="=))) 13 :29" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                         <de.hdodenhof.circleimageview.CircleImageView
+                             android:layout_width="60dp"
+                             android:layout_height="60dp"
+                             android:layout_marginLeft="10dp"
+                             android:src="@drawable/ava5" />
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="Phúc "
+                             android:textStyle="bold"
+                             android:layout_alignParentLeft="true"
+                             android:paddingLeft="90dp"
+                             android:paddingTop="10dp"/>
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentLeft="true"
+                             android:paddingLeft="90dp"
+                             android:paddingTop="30dp"
+                             android:text="hỏi chút 12:29" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                         <de.hdodenhof.circleimageview.CircleImageView
+                             android:layout_width="60dp"
+                             android:layout_height="60dp"
+                             android:layout_marginLeft="10dp"
+                             android:src="@drawable/ava6" />
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="Tuấn Anh "
+                             android:textStyle="bold"
+                             android:layout_alignParentLeft="true"
+                             android:paddingLeft="90dp"
+                             android:paddingTop="10dp"/>
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="Đi mua cá bạn ơi 18:00"
+                             android:layout_alignParentLeft="true"
+                             android:paddingLeft="90dp"
+                             android:paddingTop="30dp"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                         <de.hdodenhof.circleimageview.CircleImageView
+                             android:layout_width="60dp"
+                             android:layout_height="60dp"
+                             android:layout_marginLeft="10dp"
+                             android:src="@drawable/ava7" />
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="LeoCr Cường"
+                             android:textStyle="bold"
+                             android:layout_alignParentLeft="true"
+                             android:paddingLeft="90dp"
+                             android:paddingTop="10dp"/>
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="Hi 8:29"
+                             android:layout_alignParentLeft="true"
+                             android:paddingLeft="90dp"
+                             android:paddingTop="30dp"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                         <de.hdodenhof.circleimageview.CircleImageView
+                             android:layout_width="60dp"
+                             android:layout_height="60dp"
+                             android:layout_marginLeft="10dp"
+                             android:src="@drawable/ava8" />
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="Alasha"
+                             android:textStyle="bold"
+                             android:layout_alignParentLeft="true"
+                             android:paddingLeft="90dp"
+                             android:paddingTop="10dp"/>
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="bye 22:30"
+                             android:layout_alignParentLeft="true"
+                             android:paddingLeft="90dp"
+                             android:paddingTop="30dp"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                         <de.hdodenhof.circleimageview.CircleImageView
+                             android:layout_width="60dp"
+                             android:layout_height="60dp"
+                             android:layout_marginLeft="10dp"
+                             android:src="@drawable/ava9" />
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="kira"
+                             android:textStyle="bold"
+                             android:layout_alignParentLeft="true"
+                             android:paddingLeft="90dp"
+                             android:paddingTop="10dp"/>
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="Chiến luôn bạn ê 10:"
+                             android:layout_alignParentLeft="true"
+                             android:paddingLeft="90dp"
+                             android:paddingTop="30dp"/>
+                    </RelativeLayout>
+
+               </LinearLayout>
+               </LinearLayout>
+          </ScrollView>
+     </LinearLayout>
+     </LinearLayout>
+</FrameLayout>

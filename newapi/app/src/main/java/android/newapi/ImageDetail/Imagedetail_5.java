@@ -1,4 +1,4 @@
-package android.newapi.ButtonComment;
+package android.newapi.ImageDetail;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,12 +6,12 @@ import android.newapi.R;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-public class ButtonCommentFragmentWatch extends AppCompatActivity {
+public class Imagedetail_5 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_button_comment_fragment_watch);
+        setContentView(R.layout.activity_imagedetail5);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
     @Override
@@ -27,5 +27,4 @@ public class ButtonCommentFragmentWatch extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
 }

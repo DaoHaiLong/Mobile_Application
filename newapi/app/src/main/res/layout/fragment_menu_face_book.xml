@@ -53,7 +53,8 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginRight="25dp"
                 android:layout_marginLeft="15dp"
-                android:src="@drawable/profile" />
+                android:src="@drawable/profile"
+                android:id="@+id/user"/>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"

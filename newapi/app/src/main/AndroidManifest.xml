@@ -17,6 +17,9 @@
         android:theme="@style/Theme.Newapi"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".ImageDetail.Imagedetail_5"
+            android:exported="false" />
+        <activity
             android:name=".FullScreenWatch.Fullscreen_video4"
             android:exported="false" />
         <activity
@@ -84,6 +87,12 @@
             android:exported="false" />
         <activity
             android:name=".ButtonComment.ButtonCommentFragmentWatch4"
+            android:exported="false" />
+        <activity
+            android:name=".MenuFaceBook"
+            android:exported="false" />
+        <activity
+            android:name=".Notification"
             android:exported="false" />
         <activity
             android:name=".DetailActivity"

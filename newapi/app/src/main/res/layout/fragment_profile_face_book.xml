@@ -7,11 +7,12 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:orientation="vertical">
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp">
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -198,6 +199,166 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Friends"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="450 friends"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:layout_marginBottom="20dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="30dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:src="@drawable/eco"
+                        app:civ_border_color="#C0C0C0"
+                        app:civ_border_width="1dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Long Hack"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:src="@drawable/ava3"
+                        app:civ_border_color="#C0C0C0"
+                        app:civ_border_width="1dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Son Dang"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:src="@drawable/ava4"
+                        app:civ_border_color="#C0C0C0"
+                        app:civ_border_width="1dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="USTH"
+                        android:layout_marginLeft="25dp"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="30dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:src="@drawable/eco"
+                        app:civ_border_color="#C0C0C0"
+                        app:civ_border_width="1dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:text="Hieu Nguyen"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:src="@drawable/ava3"
+                        app:civ_border_color="#C0C0C0"
+                        app:civ_border_width="1dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chuong"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:src="@drawable/ava4"
+                        app:civ_border_color="#C0C0C0"
+                        app:civ_border_width="1dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Hoa Dc"
+                        android:layout_marginLeft="17dp"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#E11094EA"
+                android:layout_marginBottom="15dp"
+                android:text="See All Friends"></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:background="@color/white"
             android:orientation="horizontal">
             <!---           Header                -->
@@ -286,6 +447,7 @@
                     android:layout_marginTop="40dp"/>
 
                 <ImageView
+                    android:id="@+id/kimdong"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="60dp"
@@ -318,62 +480,67 @@
                     android:layout_alignParentRight="true"/>
 
             </RelativeLayout>
+            <!--      TODO:     comment-->
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="10dp">
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/newlike"
-                    android:layout_marginLeft="15dp"
-                    android:background="@color/white"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/New1h"
-                    android:layout_marginLeft="46dp"
-                    android:layout_marginTop="10dp"/>
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/new_coment_comment"
-                    android:layout_marginLeft="155dp"
-                    android:background="@color/white"
-                    android:layout_marginTop="6dp"/>
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
 
-                <TextView
+                <Button
+                    android:id="@+id/buttonproflie1"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="190dp"
-                    android:layout_marginTop="11dp"
-                    android:text="@string/New1f" />
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:backgroundTint="@color/Silver"
+                    android:drawableLeft="@drawable/likes"
+                    android:gravity="center"
+                    android:text="@string/like"
+                    android:textColor="@android:color/black"
+                    app:iconPadding="5dp" />
 
-                <ImageView
-                    android:layout_width="28dp"
-                    android:layout_height="28dp"
-                    android:layout_marginLeft="310dp"
-                    android:layout_marginTop="6dp"
-                    android:background="@color/white"
-                    android:src="@drawable/new_share" />
-
-                <TextView
+                <Button
+                    android:id="@+id/buttonproflie2"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="28dp"
+                    android:backgroundTint="@color/Silver"
+                    android:drawableLeft="@drawable/ic_stat_name"
+                    android:paddingLeft="10dp"
+                    android:text="Comment"
+                    android:textColor="@android:color/black"
+                    android:visibility="visible"
+                    app:iconPadding="2dp" />
+
+                <Button
+                    android:id="@+id/buttonproflie3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_alignParentRight="true"
-                    android:layout_marginTop="11dp"
-                    android:text="@string/New1g" />
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/Silver"
+                    android:drawableLeft="@drawable/ic_share_name"
+                    android:gravity="center"
+                    android:text="Share"
+                    android:textColor="@android:color/black"
+                    app:iconPadding="5dp" />
 
             </RelativeLayout>
         </LinearLayout>
-        <!-- TODO: Update blank fragment layout 4 -->
+        <!-- TODO: Update blank fragment layout  -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
             android:background="@color/white"
             android:orientation="horizontal"
-            android:layout_marginTop="5dp">
+            android:layout_marginBottom="10dp">
 
             <RelativeLayout
                 android:layout_width="wrap_content"
@@ -406,32 +573,36 @@
                     android:textStyle="italic" />
             </RelativeLayout>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
+            android:layout_alignParentTop="true"
             android:layout_marginTop="5dp"
-            android:layout_alignParentTop="true">
+            android:orientation="vertical">
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
                 android:layout_marginTop="5dp"
-                android:orientation="vertical"
-                android:layout_alignParentTop="true">
+                android:orientation="vertical">
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/New4b"
-                    android:layout_marginLeft="8dp"/>
+                    android:layout_marginLeft="8dp"
+                    android:text="@string/New4b" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="20dp"
                     android:text=" Thôi đập rồi chǎng? một trái tim
                                     \n Đỏ như sao Hoả, sáng sao Kim!
                                     \n Muốn oà nức nở bên em nhỏ
-                                    \n Nước mắt ta đành nuốt, lặng im."
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginTop="20dp"/>
+                                    \n Nước mắt ta đành nuốt, lặng im." />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -448,41 +619,48 @@
                                        \n Đốt pháo hoa mừng, đến lễ sau." />
 
                 <ImageView
+                    android:id="@+id/imag4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="200dp"
                     android:src="@drawable/newimage4" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/New4c"
-                    android:layout_marginTop="720dp"/>
+                    android:layout_marginTop="720dp"
+                    android:text="@string/New4c" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/New4d"
-                    android:layout_marginTop="770dp"/>
+                    android:layout_marginTop="770dp"
+                    android:text="@string/New4d" />
             </RelativeLayout>
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="13dp"
                 android:orientation="horizontal">
+
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/newlike_comment"
-                    android:layout_marginLeft="8dp" />
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/newlike_comment" />
+
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/newlove"
-                    android:layout_marginLeft="25dp"/>
+                    android:layout_marginLeft="25dp"
+                    android:src="@drawable/newlove" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1.900k"
-                    android:layout_marginLeft="50dp"/>
+                    android:layout_marginLeft="50dp"
+                    android:text="1.900k" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -491,59 +669,59 @@
                     android:text="@string/New4e" />
 
             </RelativeLayout>
-
-            <!--        Coment         -->
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginLeft="15dp"
-                    android:background="@color/white"
-                    android:src="@drawable/newlike" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="46dp"
-                    android:layout_marginTop="10dp"
-                    android:text="@string/New1h" />
-
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginLeft="155dp"
-                    android:layout_marginTop="6dp"
-                    android:background="@color/white"
-                    android:src="@drawable/new_coment_comment" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="190dp"
-                    android:layout_marginTop="11dp"
-                    android:text="@string/New1f" />
-
-                <ImageView
-                    android:layout_width="28dp"
-                    android:layout_height="28dp"
-                    android:layout_marginLeft="310dp"
-                    android:layout_marginTop="6dp"
-                    android:background="@color/white"
-                    android:src="@drawable/new_share" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginTop="11dp"
-                    android:text="@string/New1g"
-                    android:layout_marginBottom="35dp"/>
-            </RelativeLayout>
         </LinearLayout>
+        <!--      TODO:     comment-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="50dp"
+            android:background="@color/white"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <Button
+                android:id="@+id/buttonproflie4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:backgroundTint="@color/Silver"
+                android:drawableLeft="@drawable/likes"
+                android:gravity="center"
+                android:text="@string/like"
+                android:textColor="@android:color/black"
+                app:iconPadding="5dp" />
+
+            <Button
+                android:id="@+id/buttonproflie5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="28dp"
+                android:backgroundTint="@color/Silver"
+                android:drawableLeft="@drawable/ic_stat_name"
+                android:paddingLeft="10dp"
+                android:text="Comment"
+                android:textColor="@android:color/black"
+                android:visibility="visible"
+                app:iconPadding="2dp" />
+
+            <Button
+                android:id="@+id/buttonproflie6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/Silver"
+                android:drawableLeft="@drawable/ic_share_name"
+                android:gravity="center"
+                android:text="Share"
+                android:textColor="@android:color/black"
+                app:iconPadding="5dp" />
+
+        </RelativeLayout>
     </LinearLayout>
 </ScrollView>
