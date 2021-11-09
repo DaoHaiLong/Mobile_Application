@@ -19,7 +19,7 @@ public class Fullscreen_video3 extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         videoView = findViewById(R.id.fullscreen3);
-        Uri video = Uri.parse("https://cdn-cf-east.streamable.com/video/mp4/ye0gj2.mp4?Expires=1636296420&Signature=do~eG33BAu1vXhUj5KVkKi6IHJPLD1XNd9FIq3Ywzahyd074TH-gLtv08~S1jYywteuHoFa3~p0M0-stnXJ2OkW1PncysKIG5FeSZPoL9llOuCf3aqZm0nj42MvvZvk8U-1PM05xvIGxN7R7wzFiNHTc854xun-Q0p7sOh8k~EyEcgWZdGRiMZB-gHHmk0e2bxFWOA6BZ2bhhLD4HqW2QQ2kfK4nySLgctVrVXgsRSWqEgsHnpFNiTXNxh6OMv2e8Lp931nUZF4npYHqH3UWb~h03kqtFcatUc7XE4quksYPqQKMejgF0akMMlhfU34UWiAWFUjczFo5g65oXZU09w__&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ");
+        Uri video = Uri.parse("https://cdn-cf-east.streamable.com/video/mp4/ye0gj2.mp4?Expires=1636640940&Signature=L2eNV0HS6ZCHO5~UNIi0ZNEBuOHGpRpYdGxef1ySsyBF8mhBkEd1PD3YqnLjwt-BpkQ9eijovPSY5T~HORVKLo3S39HP-~eNBvJRyQYLRoGY2QodH1dKo2Ny8JlkKL9HNz3~daVvYTAvU6LmMXU2M5v~IcWyRBbFQ940PJk29kmwPfqCtRL3wcrr9YEKjatK5vJou46SiTCOOdo9AXgH5ZlxETNcvs0ffomQUQrfhuePDidaoJZSrHd8Y8SrA0L6zY7O8L8WOq8u0VJDuZo3D4dbpSPSUUdIwdfuGvLQVtzBJTaGDEXx52Qj4Rz-HcavJc-Lecz79CyUFzqRIV8dsA__&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ");
         videoView.setVideoURI(video);
 
         MediaController mediaController = new MediaController(this);
